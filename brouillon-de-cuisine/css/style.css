@@ -1,0 +1,265 @@
+:root{
+    --h1-font:'Edu AU VIC WA NT Hand';
+    --text-font:"Playwrite CL", cursive;
+
+    --white-color:#fff;
+    --nav-bg-color:#241f1f;
+    --h1-color:#783838;
+    --bg-color:#fef6da;
+}
+
+
+#container1{
+    height: 100vh;
+    min-width: 50vh;
+}
+
+#title-compte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bg-color);
+
+    margin-bottom: 2.5rem;
+}
+
+#title-compte img {
+    height: 4rem;
+    width: 4rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.compte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.se-connecter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.se-connecter a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--nav-bg-color);
+    font-size: 1.25rem;
+    text-align: center;
+
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1rem;
+
+    border-right: solid 1px;
+    border-style: dashed;
+}
+
+ a.border-none{
+    border: none;
+    padding-left: -1rem;
+}
+
+.se-connecter a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-family:var(--text-font);
+    font-size: 3rem;
+    font-weight:bold;
+    font-style: italic;
+    
+    color: #783838;
+    
+
+    padding: 3rem 3rem 1rem ;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+nav{
+    background-color: var(--nav-bg-color);
+
+    padding: 2rem;
+    margin: 1rem 5rem 2.5rem 5rem;
+
+    border-radius: 5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--white-color);
+    font-size: 1.25rem;
+
+    border-right: solid 1px;
+    border-color: var(--white-color);
+    border-style:dashed;
+
+    padding: 0.5rem 2rem;
+}
+
+nav a:hover{
+    background-color: var(--white-color);
+    color: var(--nav-bg-color);
+
+    border-radius: 1rem;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#container2{
+    background-image:url(../images/cook-2364221_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    box-shadow: 0rem 0rem 5rem 0.5rem;
+
+}
+
+#h2-h3-container{
+    background-color:#783838c5;
+    color: var(--white-color);
+    font-style: italic;
+
+    
+}
+
+h2{
+    font-family: var(--text-font);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+
+    padding-top: 2rem;
+
+}
+
+h3{
+    font-family: var(--text-font); 
+    text-align: center;
+
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+h4{
+    font-family: var(--text-font);
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding: 2rem auto;
+    margin: 2rem auto;
+}
+
+main{
+    position: relative;
+}
+
+input{
+    border-radius: 5rem;
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+    padding: 1.5rem;
+    width: 40rem;
+
+    border: none;
+    outline: none;
+    background-color: #ffffffb8;
+
+    font-size: 1.5rem;
+}
+
+input:hover{
+    background-color:#ffffff ;
+}
+
+#article{
+    color: var(--nav-bg-color);
+
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 40%;
+}
+
+article{
+    background-color:#f9ecccc4;
+    margin: 2rem;
+    padding: 3rem;
+    padding-top: 1.5rem;
+
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+article:hover{
+    background-color: var(--bg-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color:#241f1fdf;
+    color: var(--white-color);
+
+    padding-bottom: 2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 1rem;
+}
+
+#container-social-network img{
+    height: 2rem;
+    width: 2rem;
+}
+
+#container-social-network img:hover{
+    scale: (1,2)
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--white-color);
+
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+    font-size: 1.25rem;   
+}
+
+
+#container-contact a:hover{
+    background-color: var(--white-color);
+    color: var(--nav-bg-color);
+
+    border-radius: 1rem;
+}
