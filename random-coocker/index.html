@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cookert</title>
+    <!--links/Script-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title" >Random cooker</h1>
+    </header>
+    <!--Contient le generateur-->
+    <main class="generator-container">
+
+        <!--Afficher les bouttons-->
+        <nav class="main__nav-bar">
+            <ul class="main__ul">
+                <button class="main__nav-btn">Liste d'ingredients</button>
+                <button class="main__nav-btn test-recipe-btn">Tester ma recette</button>
+                <button class="main__nav-btn random-recipte-btn">Generer une recette aleatoire</button>
+            </ul>
+        </nav>
+
+        <!--Afficher la liste des ingredients dispo sur le site, par catégories (fruits, legumes, etc)-->
+        <div class="food-list food-list--hidden">
+            <h2 class="generator__h2">Liste d'ingredients</h2>
+            <p>food list</p>
+        </div>
+
+        <!--Tester ma recette-->
+        <div class="test-recipe test-recipe--hidden">
+            <!--Food picker-->
+            <div class="food-picker">
+                <h2 class="generator__h2">Selectionne tes ingredients</h2>
+                <p class="generator__p">Liste d'ingrédients</p>
+            </div>
+            <!--Affiche de la liste des aliments choisit-->
+            <div class="user-recipe">
+                <div food-picker__input>
+                    <h2 class="generator__h2">Ma recette</h2>
+                    <label for="recipe-title" class="food-picker__label">Nomme ta super recette !</label>
+                    <input type="text" name="recipe-title" id="recipe-name" placeholder="Ex: La soupe qui mouille" class="recipe-name">
+                </div>
+                <p class="generator__p">Recette utilisateur</p>
+            </div>
+        </div>
+
+        <!--Recette aléatoire-->
+        <div class="random-recipe random-recipe--hidden">
+            <h2 class="generator__h2">Recette aléatoire</h2>
+            <p class="generator__p">Recette aléatoire</p>
+        </div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
