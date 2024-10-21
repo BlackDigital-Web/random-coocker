@@ -4,6 +4,7 @@
 body{
     background-color: #d0b0eb;
     font-family: sans-serif;
+    overflow-y: scroll;
 }
 
 .header{
@@ -27,11 +28,12 @@ body{
 -----------------*/
 .generator-container{
     background-color: #c287f2;
-    height: 85vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    
 }
 
 /*Main nav bar*/
@@ -54,7 +56,7 @@ body{
     padding: 1.5rem;
     font-size: 2rem;
     color: #fff;
-    border: solid 2px #000;
+    border: solid 2px #741be0;
     background-color: #bfe381;
     border-radius: 20px 20px;
 }
@@ -62,19 +64,15 @@ body{
 .main__nav-btn:hover{
     transition: .3s;
     background-color: #deebc8;
+    color: #741be0;
+    transform: scale(110%);
 }
 
-/*.main__nav-btn:nth-child(1){
-    border-radius: 30px 0px 0px 30px;
+.nav--hidden{
+    display: none;
 }
 
-.main__nav-btn:nth-child(3){
-    border-radius: 0px 30px 30px 0px;
-}
-
-
-
-.main__nav-bar{
+/*.main__nav-bar{
     display: none;
 }*/
 
@@ -90,6 +88,7 @@ body{
     width: 50%;
     border: solid 2px;
     border-radius: 20px;
+    position: absolute;
     
 }
 
@@ -109,6 +108,8 @@ body{
     border: solid 2px;
     border-radius: 20px;
     gap: 1rem;
+    position: absolute;
+
 }
 
 .food-picker, .user-recipe{
@@ -154,8 +155,26 @@ body{
     width: 50%;
     border: solid 2px;
     border-radius: 20px;
+    position: absolute;
 }
 
 .random-recipe--hidden{
     display: none;
 }
+
+/*icone*/
+.cross-off{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+/*p:hover {
+    color:#741be0;
+
+}*/

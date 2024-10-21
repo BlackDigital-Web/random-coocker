@@ -17,40 +17,44 @@
     <main class="generator-container">
 
         <!--Afficher les bouttons-->
-        <nav class="main__nav-bar">
+        <nav class="main__nav-bar ">
             <ul class="main__ul">
-                <button class="main__nav-btn">Liste d'ingredients</button>
-                <button class="main__nav-btn test-recipe-btn">Tester ma recette</button>
-                <button class="main__nav-btn random-recipte-btn">Generer une recette aleatoire</button>
+                <button class="main__nav-btn btn1" id="btn1">Afficher la liste des ingredients</button>
+                <button class="main__nav-btn btn2" id="btn2">Tester ma recette</button>
+                <button class="main__nav-btn btn3" id="btn3">Generer une recette aleatoire</button>
             </ul>
         </nav>
 
         <!--Afficher la liste des ingredients dispo sur le site, par catégories (fruits, legumes, etc)-->
         <div class="food-list food-list--hidden">
+            <img class="cross-off" src="./images/icones/bouton-fermer.png" alt="icone fermer">
             <h2 class="generator__h2">Liste d'ingredients</h2>
-            <p>food list</p>
+            <p class="food-list-content">food list</p>
         </div>
-
         <!--Tester ma recette-->
         <div class="test-recipe test-recipe--hidden">
             <!--Food picker-->
             <div class="food-picker">
                 <h2 class="generator__h2">Selectionne tes ingredients</h2>
-                <p class="generator__p">Liste d'ingrédients</p>
+                <p class="generator__p food-picker__p">Liste d'ingrédients</p>
             </div>
             <!--Affiche de la liste des aliments choisit-->
-            <div class="user-recipe">
-                <div food-picker__input>
-                    <h2 class="generator__h2">Ma recette</h2>
-                    <label for="recipe-title" class="food-picker__label">Nomme ta super recette !</label>
-                    <input type="text" name="recipe-title" id="recipe-name" placeholder="Ex: La soupe qui mouille" class="recipe-name">
-                </div>
-                <p class="generator__p">Recette utilisateur</p>
+            <div class="user-recipe ">
+                <img class="cross-off" src="./images/icones/bouton-fermer.png" alt="icone fermer">
+                <h2 class="generator__h2">Ma recette</h2>
+                    <form for="recipe-name">
+                        <div id="food-picker__input">
+                            <label for="recipe-name"
+                            class="food-picker__label">Nomme ta super recette !</label>
+                            <input type="text" name="recipe-title" id="recipe-name" placeholder="Ex: La soupe qui mouille" class="recipe-name">
+                        </div>
+                    </form>
+                <p class="generator__p p-content">Recette utilisateur</p>
             </div>
         </div>
-
         <!--Recette aléatoire-->
         <div class="random-recipe random-recipe--hidden">
+            <img class="cross-off" src="./images/icones/bouton-fermer.png" alt="icone fermer">
             <h2 class="generator__h2">Recette aléatoire</h2>
             <p class="generator__p">Recette aléatoire</p>
         </div>
